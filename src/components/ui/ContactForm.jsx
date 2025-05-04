@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContactForm.css';
 
 export default function ContactForm({ onSubmitSuccess }) {
   const [formData, setFormData] = useState({

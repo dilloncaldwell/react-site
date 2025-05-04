@@ -17,16 +17,16 @@ export default function Navbar() {
             </Link>
           </li>
           <li className={`menu-item ${isCurrent('/portfolio') ? 'current-menu-item' : ''}`}>
-            <Link to={`${base}/portfolio`}>Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           <li className={`menu-item ${isCurrent('/team') ? 'current-menu-item' : ''}`}>
-            <Link to={`${base}/team`}>Team</Link>
+            <Link to="/team">Team</Link>
           </li>
           <li className={`menu-item ${isCurrent('/blog') ? 'current-menu-item' : ''}`}>
-            <Link to={`${base}/blog`}>Blog</Link>
+            <Link to="/blog">Blog</Link>
           </li>
           <li className={`menu-item ${isCurrent('/contact') ? 'current-menu-item' : ''}`}>
-            <Link to={`${base}/contact`}>Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

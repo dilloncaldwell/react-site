@@ -201,9 +201,6 @@ body #header-wrapper.sticky {
 #header-cell-2 .header-top a:hover {
   color: #00d8fe;
 }
-#header-cell-2 .header-top a:hover i {
-  /* color: #00d8fe; */
-}
 .home #header-cell-2 .header-top p,
 .home #header-cell-2 .header-top a {
   color: #fff;

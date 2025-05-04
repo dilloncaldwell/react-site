@@ -348,45 +348,6 @@ select {
 
 /* Home Meet the Team */
 
-#home-team-wrapper {
-  padding: 100px 0;
-  background: #f4fdff;
-}
-#home-team h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-#home-team p {
-  max-width: 850px;
-  margin: 0 auto;
-  text-align: center;
-}
-#home-team .team-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  gap: 50px;
-  margin: 50px 0 0;
-}
-#home-team .team-member {
-  text-align: center;
-}
-#home-team .team-member:nth-last-child(1),
-#home-team .team-member:nth-last-child(2) {
-  transform: translateX(50%);
-}
-#home-team .team-member img {
-  /* width: 100%;
-  height: auto; */
-  border-radius: 50%;
-  /* max-width: 200px; */
-  object-fit: cover;
-}
-#home-team .team-member h3 {
-  color: var(--secondary);
-  font-size: 18px;
-  font-weight: 700;
-}
 /* ------------------------------ *
 * Team Bio
 * ------------------------------ */

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import metadata from '/src/content/Team/metadata.json'; // Import preprocessed metadata
+import './HomeTeamMember.css';
 
 const HomeTeamMember = () => {
   return (

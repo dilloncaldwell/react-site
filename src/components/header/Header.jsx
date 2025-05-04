@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Section from '../common/Section';
+import './Header.css';
 import Navbar from './Navbar';
 
 export default function Header() {

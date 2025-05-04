@@ -1,0 +1,171 @@
+/* --------------------- *
+*  Primary Nav Section
+* ---------------------- */
+#primary-nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+#primary-nav .menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  list-style: none;
+}
+#primary-nav .menu > li {
+  /* display: table-cell; */
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+#primary-nav .menu > .menu-item > a {
+  color: #000;
+  font-family: var(--body-font);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+  line-height: normal;
+  padding: 5px 0;
+  text-decoration: none;
+  position: relative;
+  height: auto;
+  transition: 0.2s ease;
+}
+.home #primary-nav .menu > .menu-item > a {
+  color: #fff;
+}
+
+#primary-nav .menu li a:hover {
+  text-decoration: none;
+}
+/** --- Menu Item Hover animation --- */
+#primary-nav .menu > .menu-item.current-menu-item > a,
+#primary-nav .menu > .menu-item > a:hover {
+  color: var(--primary-light);
+  color: #00d8fe;
+}
+#primary-nav .menu > .menu-item > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  height: 0;
+  background-position: left bottom;
+  transition: width 0.35s ease-out;
+}
+#primary-nav .menu > .menu-item:hover > a::after,
+#primary-nav .menu > .menu-item.current-menu-item > a::after,
+#primary-nav .menu > .menu-item.current-menu-item > a:hover::after,
+#primary-nav .menu > .menu-item.current-menu-item > a:focus::after {
+  background-color: var(--accent);
+  width: 100%;
+  height: 2px;
+}
+
+/* --------------------- *
+*  Mobile Nav Section
+* ---------------------- */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu-toggle i {
+  color: var(--primary);
+  font-size: 2rem;
+}
+#menu-nav.open .mobile-menu-toggle i {
+  color: #fff;
+}
+.home .mobile-menu-toggle i {
+  color: #fff;
+}
+
+@media screen and (max-width: 950px) {
+  #header-cell-2 .desktop-view {
+    display: none;
+  }
+  #menu-nav .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0 !important;
+    background-color: var(--primary);
+    position: fixed;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 70px 0 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  #menu-nav .menu.open {
+    display: flex;
+  }
+  #menu-nav .menu .menu-item {
+    width: 100%;
+    margin: 0;
+    padding: 10px 25px;
+    transition: 0.2s ease-in;
+  }
+  #menu-nav .menu .menu-item:hover {
+    background: var(--primary-light);
+  }
+  #menu-nav .menu .menu-item a {
+    display: block;
+    color: #fff;
+    text-align: left;
+  }
+  #menu-nav .menu .menu-item a::after {
+    display: none;
+  }
+  #menu-nav .menu .menu-item a:hover {
+    color: #fff;
+  }
+  #primary-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .mobile-menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+  #menu-nav.section.open .mobile-menu-toggle {
+    top: -35px;
+    right: -25px;
+  }
+  #menu-nav.section .mobile-menu-toggle {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+  .menu.open {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .menu.open {
+    display: flex;
+    opacity: 1;
+  }
+
+  .menu-item {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .menu-item a {
+    color: white;
+    text-decoration: none;
+  }
+}

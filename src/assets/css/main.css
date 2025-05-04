@@ -341,22 +341,6 @@ body #header-wrapper.sticky {
 .home #primary-nav .menu > .menu-item > a {
   color: #fff;
 }
-/* #primary-nav .menu {
-  font-size: 0px;
-  display: table;
-  width: 100%;
-}
-
-#primary-nav .menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#primary-nav .menu li {
-  padding: 0;
-  margin: 0;
-} */
 
 #primary-nav .menu li a:hover {
   text-decoration: none;

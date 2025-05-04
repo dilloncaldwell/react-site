@@ -192,8 +192,6 @@ input[type='submit']:active {
 /* --------------------- *
 * Blog Archive
 * ---------------------- */
-.blog .post-list {
-}
 .blog .post-list .post {
   position: relative;
   padding-bottom: 45px;

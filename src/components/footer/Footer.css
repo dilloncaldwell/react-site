@@ -1,0 +1,133 @@
+/** ======================================== *
+**      #region Footer Section
+** ======================================== */
+#footer-wrapper {
+  padding: 100px 0 0;
+  background: var(--primary);
+  color: #fff;
+}
+
+/** --- Cell 1 --- */
+#footer h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+#footer .location-post-list {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 40px;
+}
+#footer .location-post {
+  padding: 25px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+#footer .location-post .business-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#footer .location-post .business-info .business-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+#footer .business-info a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+#footer .business-info a:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+#footer .address {
+  display: flex;
+  gap: 5px;
+  color: #fff;
+}
+#footer .business-info .label {
+  font-size: 0;
+}
+#footer .business-info .address,
+#footer .business-info .fax .value,
+#footer .business-info .phone-1 .value a,
+#footer .business-info .email .value {
+  font-weight: 400;
+  font-size: 16px;
+}
+#footer .location-post .address::before,
+#footer .location-post .phone-1::before,
+#footer .location-post .email::before {
+  color: var(--accent);
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Font Awesome 6 Free';
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 7px;
+}
+#footer .address::before {
+  content: '\f3c5';
+}
+#footer .phone-1::before {
+  content: '\f095';
+}
+#footer .email::before {
+  content: '\f0e0';
+}
+#footer .tmf-post.small.location .streetAddress {
+  line-height: 22px;
+  align-self: center;
+}
+#footer .tmf-post.small.location .streetAddress::before {
+  display: none;
+}
+#footer .tmf-post.small.location .streetAddress .address-2 {
+  display: block;
+}
+
+/** --- Cell 2 --- */
+#footer-cell-2 {
+  vertical-align: middle;
+}
+#footer-cell-2 h4 {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+#footer .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#footer .social-links a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+#footer .social-links a:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+#footer .social-links a i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--accent);
+}
+
+@media screen and (max-width: 1050px) {
+  #footer-wrapper {
+    padding: 70px 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #footer-container {
+    max-width: 100%;
+  }
+}
+
+/** #endregion Footer Section */

@@ -1,0 +1,50 @@
+.badge-slider {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0;
+}
+.badge-slider .slick-slide {
+  padding: 0 20px;
+  box-sizing: border-box;
+  float: none;
+  display: inline-block !important;
+  vertical-align: middle;
+  text-align: center;
+}
+.badge-slider .slick-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .badge-slider {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .badge-slider {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .badge-slider {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .badge-slider {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .badge-slider {
+    max-width: 500px;
+  }
+}

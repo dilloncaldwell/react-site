@@ -1,0 +1,45 @@
+/* -------------------------
+*	 Attorney Body Section
+* ------------------------- */
+.single-team #body-wrapper {
+  padding: 30px 0 50px;
+}
+/* --- cell 1 ---- */
+.single-team #body-cell-1 {
+  width: 450px;
+}
+.single-team #body-cell-1 .inner {
+  margin-top: 95px;
+}
+.single-team #body-cell-1 .sidebar {
+  margin: 0 auto;
+}
+
+/* --- cell 2 ---- */
+.single-team #body-cell-2 {
+  width: auto;
+}
+
+@media screen and (max-width: 1150px) {
+  .single-team #body-cell-1 .inner {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .single-team #body-wrapper {
+    padding: 50px 0 50px;
+  }
+  .single-team #body-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .single-team #body-cell-1 {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 50px !important;
+  }
+  .single-team #body-cell-2 {
+    padding-top: 0;
+  }
+}

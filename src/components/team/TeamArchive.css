@@ -1,0 +1,77 @@
+.team-archive .team-list .team-post {
+  position: relative;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid rgba(193, 191, 185, 0.4);
+}
+.team-archive .team-list .team-post:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.team-archive .team-list .team-post img.thumbnail {
+  max-height: 150px;
+  max-width: 135px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 7px;
+  float: left;
+  object-fit: cover;
+}
+.team-archive .team-list .team-post h2.team-name a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+.team-archive .team-list .team-post .team-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+.team-archive .team-list .team-post .contact-info {
+  font-size: 0.85em;
+  line-height: 1.5em;
+  margin-top: 10px;
+  display: inline-block;
+}
+.team-archive .team-list .team-post .contact-info a {
+  text-decoration: none;
+  color: #000;
+}
+.team-archive .team-list .team-post .phone::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f095';
+  margin-right: 5px;
+  transform: rotate(10deg);
+  width: 16px;
+  color: var(--accent-dark);
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+.team-archive .team-list .team-post .label {
+  font-size: 0;
+}
+.team-archive .team-list .team-post .email::before {
+  content: '\f0e0';
+  margin-right: 5px;
+  width: 16px;
+  font-family: 'Font Awesome 6 Free';
+  color: var(--accent-dark);
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+.team-archive .team-list .team-post .excerpt {
+  clear: both;
+  margin-top: 10px;
+}
+.team-archive .team-list .team-post .read-more-button {
+  margin-top: 15px;
+}

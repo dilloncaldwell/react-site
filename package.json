@@ -10,7 +10,7 @@
     "generate-slider-data": "node scripts/generateSliderData.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "npm run generate-metadata && npm run generateSliderData && vite build",
+    "build": "npm run generate-metadata && npm run generate-slider-data && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

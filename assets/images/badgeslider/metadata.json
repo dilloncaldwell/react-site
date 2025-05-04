@@ -1,0 +1,32 @@
+[
+  {
+    "index": 1,
+    "name": "git",
+    "path": "assets/images/badgeslider/git.svg"
+  },
+  {
+    "index": 2,
+    "name": "gnubash",
+    "path": "assets/images/badgeslider/gnubash.svg"
+  },
+  {
+    "index": 3,
+    "name": "javascript",
+    "path": "assets/images/badgeslider/javascript.svg"
+  },
+  {
+    "index": 4,
+    "name": "php",
+    "path": "assets/images/badgeslider/php.svg"
+  },
+  {
+    "index": 5,
+    "name": "python",
+    "path": "assets/images/badgeslider/python.svg"
+  },
+  {
+    "index": 6,
+    "name": "react",
+    "path": "assets/images/badgeslider/react.svg"
+  }
+]

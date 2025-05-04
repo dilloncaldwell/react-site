@@ -1,23 +1,21 @@
 {
+  "homepage": "https://dilloncaldwell.github.io/react-site",
   "name": "react-site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://your-username.github.io/resume-site",
   "scripts": {
     "dev": "vite",
     "generate-metadata": "node scripts/generateMetadata.js",
     "generate-slider-data": "node scripts/generateSliderData.js",
-    "build": "npm run generate-metadata && npm run generateSliderData && vite build",
-    "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "build": "npm run generate-metadata && npm run generateSliderData && vite build",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "markdown-to-jsx": "^7.7.6",
-    "marked": "^15.0.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0",

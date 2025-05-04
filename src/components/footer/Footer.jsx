@@ -1,8 +1,8 @@
 import React from 'react';
 import Section from '../common/Section';
 import Social from '../ui/Social';
+import './Footer.css';
 import LocationFooter from './LocationFooter';
-import './footer.css';
 
 const Footer = () => {
   return (

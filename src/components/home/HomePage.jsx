@@ -8,6 +8,7 @@ import Button from '../ui/Button';
 import BadgeSlider from './BadgeSlider';
 import Hero from './Hero';
 import './HomeBadges.css';
+import './HomeOurProcess.css';
 import HomeTeamMember from './HomeTeamMember';
 import metadata from '/src/content/Home/metadata.json';
 

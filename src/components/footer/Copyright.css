@@ -1,0 +1,78 @@
+/** ======================================== *
+**      #region Copyright Section
+** ======================================== */
+#copyright-wrapper {
+  overflow: hidden;
+  background: var(--primary);
+}
+
+#copyright {
+  padding: 50px 0 25px;
+}
+#copyright p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+#copyright p a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+#copyright a:hover {
+  text-decoration: underline;
+}
+#copyright .divider {
+  margin: 0 10px !important;
+  color: #fff;
+}
+
+/** --- cell 1 --- */
+#copyright #copyright-cell-1 {
+  vertical-align: middle;
+}
+#copyright #copyright-cell-1 br:first-of-type {
+  display: none;
+}
+
+/** --- cell 2 --- */
+#copyright #copyright-cell-2 {
+  vertical-align: middle;
+  text-align: right;
+}
+
+@media screen and (max-width: 1050px) {
+  #copyright-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #copyright #copyright-cell-1,
+  #copyright #copyright-cell-2 {
+    text-align: left;
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  #copyright #copyright-cell-1 br:first-of-type {
+    margin-bottom: 5px;
+  }
+  #copyright #copyright-cell-1 span.divider.one {
+    display: none;
+  }
+  #copyright #copyright-cell-1 span.copyright {
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #copyright-container {
+    max-width: 100%;
+  }
+}
+
+/** #endregion Copyright Section */

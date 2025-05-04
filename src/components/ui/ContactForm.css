@@ -46,3 +46,74 @@
 .form-wrapper input[type='submit']:hover {
   background: var(--primary-light);
 }
+
+/** ======================================== *
+**      #region Inputs & Gravity Forms
+** ======================================== */
+:root {
+  --input-bg: #fff;
+  --input-txt: #000;
+  --input-placeholder: #676767;
+  --input-border: #fff;
+  --form-txt: #000;
+}
+input[type='text']::placeholder,
+input[type='tel']::placeholder,
+input[type='email']::placeholder,
+input[type='url']::placeholder,
+input[type='number']::placeholder,
+input[type='checkbox']::placeholder,
+input[type='radio']::placeholder,
+input[type='date']::placeholder,
+input[type='time']::placeholder,
+input[type='hidden']::placeholder,
+input[type='password']::placeholder,
+input[type='file']::placeholder,
+input[type='range']::placeholder,
+input[type='color']::placeholder,
+input[type='search']::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: var(--input-placeholder);
+  /* text-align: center; */
+  font-size: 12px !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='url'],
+input[type='number'],
+input[type='checkbox'],
+input[type='radio'],
+input[type='date'],
+input[type='time'],
+input[type='hidden'],
+input[type='password'],
+input[type='file'],
+input[type='range'],
+input[type='color'],
+input[type='search'],
+textarea,
+select {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 3px;
+  color: var(--input-txt);
+  font-size: 12px !important;
+  margin-top: 0 !important;
+  margin-bottom: 5px !important;
+  max-width: 100%;
+  padding: 15px 15px !important;
+  line-height: normal !important;
+  accent-color: var(--accent);
+}
+textarea {
+  height: 120px !important;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

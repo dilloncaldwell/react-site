@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../common/Section';
+import './Copyright.css';
 
 const Copyright = () => {
   const year = new Date().getFullYear();

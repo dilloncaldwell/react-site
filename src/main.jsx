@@ -8,7 +8,7 @@ import './assets/css/main.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/react-site">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>

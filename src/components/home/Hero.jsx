@@ -7,15 +7,17 @@ import hero_small from '../../assets/images/hero_small.jpg';
 import Section from '../common/Section';
 import Button from '../ui/button';
 import './Hero.css';
+import metadata from '/src/content/Home/metadata.json';
 
 const Hero = () => {
-  const [heroContent, setHeroContent] = useState('');
+  const [content, setContent] = useState({});
 
   useEffect(() => {
-    fetch('/src/content/Home/home-hero.md')
-      .then((res) => res.text())
-      .then((text) => setHeroContent(text))
-      .catch((err) => console.error('Error loading home-hero.md', err));
+    const contentData = {};
+    metadata.forEach((file) => {
+      contentData[file.slug] = file.content;
+    });
+    setContent(contentData);
   }, []);
 
   return (
@@ -47,7 +49,7 @@ const Hero = () => {
 
       <div className="billboard-content-container">
         <div className="billboard-content">
-          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{heroContent}</ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content['home-hero']}</ReactMarkdown>
           <Button to="/contact">Contact Us</Button>
         </div>
       </div>

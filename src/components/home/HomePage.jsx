@@ -4,7 +4,7 @@ import rehypeRaw from 'rehype-raw';
 import Section from '../common/Section';
 import usePageTitle from '../hooks/usePageTitle';
 import Sidebar from '../sidebar/Sidebar';
-import Button from '../ui/button';
+import Button from '../ui/Button';
 import BadgeSlider from './BadgeSlider';
 import Hero from './Hero';
 import './HomeBadges.css';

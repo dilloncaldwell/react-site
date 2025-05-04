@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import Section from '../common/Section';
-import Button from '../ui/button';
+import Button from '../ui/Button';
 import './Hero.css';
 import metadata from '/src/content/Home/metadata.json';
 

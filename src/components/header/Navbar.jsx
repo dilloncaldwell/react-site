@@ -12,7 +12,7 @@ export default function Navbar() {
       <nav id="primary-nav" className="section">
         <ul id="primary-nav-menu" className="menu">
           <li className={`menu-item ${isCurrent('/') ? 'current-menu-item' : ''}`}>
-            <Link to={`${base}/`} aria-current={isCurrent('/') ? 'page' : undefined}>
+            <Link to="/" aria-current={isCurrent('/') ? 'page' : undefined}>
               Home
             </Link>
           </li>

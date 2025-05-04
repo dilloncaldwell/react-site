@@ -39,7 +39,7 @@ export default function Header() {
       <Section.Row collapse={1200}>
         <Section.Cell span={7}>
           <div className="main-logo">
-            <Link to={`${import.meta.env.BASE_URL}`}>
+            <Link to="/">
               <img id="site-logo" className="logo" src={logo} alt="Site Logo" width="80" height="80" />
             </Link>
           </div>

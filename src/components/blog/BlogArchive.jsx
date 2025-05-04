@@ -4,7 +4,7 @@ import Section from '../common/Section';
 import usePageTitle from '../hooks/usePageTitle';
 import Sidebar from '../sidebar/Sidebar';
 import PageTitleBar from '../titlebar/PageTitleBar';
-import Button from '../ui/button';
+import Button from '../ui/Button';
 import metadata from '/src/content/Blog/metadata.json'; // Import metadata
 
 const Blog = () => {

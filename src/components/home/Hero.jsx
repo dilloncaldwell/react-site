@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
-import hero_large from '../../assets/images/hero_large.jpg';
-import hero_medium from '../../assets/images/hero_medium.jpg';
-import hero_small from '../../assets/images/hero_small.jpg';
 import Section from '../common/Section';
 import Button from '../ui/button';
 import './Hero.css';
@@ -20,17 +17,22 @@ const Hero = () => {
     setContent(contentData);
   }, []);
 
+  const base = import.meta.env.BASE_URL;
+  const heroSmall = `${base}assets/images/hero_small.jpg`;
+  const heroMedium = `${base}assets/images/hero_medium.jpg`;
+  const heroLarge = `${base}assets/images/hero_large.jpg`;
+
   return (
     <Section baseId="billboard" role="banner">
       <div className="billboard-slider-container">
         <div className="billboard-slides">
           <div className="slide active">
             <img
-              src={hero_large} // fallback image
+              src={heroLarge} // fallback image
               srcSet={`
-                ${hero_small} 500w,
-                ${hero_medium} 950w,
-                ${hero_large} 1250w
+                ${heroSmall} 500w,
+                ${heroMedium} 950w,
+                ${heroLarge} 1250w
               `}
               sizes={`
                 (max-width: 500px) 100vw,

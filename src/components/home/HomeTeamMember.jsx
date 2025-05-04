@@ -8,7 +8,7 @@ const HomeTeamMember = () => {
       {metadata.map((member) => (
         <div key={member.slug} className="team-member">
           <Link to={`/team/${member.slug}`}>
-            <img src={`/src/assets/images/${member.thumbnail_image}`} alt={member.name} width="200" height="200" loading="lazy" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/${member.thumbnail_image}`} alt={member.name} width="200" height="200" loading="lazy" />
             <h3>{member.name}</h3>
             <p>{member.title}</p>
           </Link>

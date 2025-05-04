@@ -20,7 +20,7 @@ const TeamMemberBio = () => {
         <Section.Row collapse={950}>
           <Section.Cell span={8}>
             <div className="attorney-bio-img">
-              <img src={`/src/assets/images/${member.bio_image}`} alt={member.name} width="400" height="400" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/${member.bio_image}`} alt={member.name} width="400" height="400" />
             </div>
           </Section.Cell>
           <Section.Cell span={16}>

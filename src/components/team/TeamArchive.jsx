@@ -21,7 +21,14 @@ const TeamArchive = () => {
                   <div key={member.slug} className="team-post">
                     {/* Thumbnail Image */}
                     <Link to={`/team/${member.slug}`}>
-                      <img className="thumbnail" src={`/src/assets/images/${member.thumbnail_image}`} alt={`${member.name}'s Profile`} width="200" height="200" loading="lazy" />
+                      <img
+                        className="thumbnail"
+                        src={`${import.meta.env.BASE_URL}assets/images/${member.thumbnail_image}`}
+                        alt={`${member.name}'s Profile`}
+                        width="200"
+                        height="200"
+                        loading="lazy"
+                      />
                     </Link>
 
                     {/* Name and Title */}

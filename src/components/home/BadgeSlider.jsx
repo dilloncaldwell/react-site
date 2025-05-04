@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import './BadgeSlider.css';
-import badgeData from '/src/assets/images/badgeslider/metadata.json';
 
 const BadgeSlider = () => {
+  const [badgeData, setBadgeData] = useState([]);
+
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}assets/images/badgeslider/metadata.json`)
+      .then((res) => res.json())
+      .then(setBadgeData)
+      .catch((err) => console.error('Failed to load badge metadata:', err));
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -44,7 +52,7 @@ const BadgeSlider = () => {
       <Slider {...settings}>
         {badgeData.map((badge) => (
           <div key={badge.index} className="badge-slide">
-            <img src={badge.path} alt={badge.name} />
+            <img src={`${import.meta.env.BASE_URL}${badge.path}`} alt={badge.name} />
           </div>
         ))}
       </Slider>

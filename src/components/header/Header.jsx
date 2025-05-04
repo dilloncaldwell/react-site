@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../assets/images/react.svg';
 import Section from '../common/Section';
 import Navbar from './Navbar';
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+
+  const logo = `${import.meta.env.BASE_URL}assets/images/react.svg`;
 
   useEffect(() => {
     const handleScroll = () => {

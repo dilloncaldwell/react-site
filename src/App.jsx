@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Blog from './components/blog/BlogArchive.jsx';
 import SinglePost from './components/blog/SinglePost.jsx';
+import RedirectHandler from './components/common/RedirectHandler.jsx';
 import ScrollToTop from './components/common/ScrollToTop.jsx';
 import Contact from './components/contact/ContactPage.jsx';
 import Copyright from './components/footer/Copyright.jsx';
@@ -48,6 +49,7 @@ export default function App() {
 
   return (
     <>
+      <RedirectHandler />
       <Header />
       <ScrollToTop />
       <Routes>

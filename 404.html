@@ -3,6 +3,12 @@
   <head>
     <meta http-equiv="refresh" content="0; url=/react-site/" />
     <title>404</title>
+    <script type="text/javascript">
+      // Capture full path and redirect to /react-site/?redirect=originalPath
+      const redirectPath = window.location.pathname + window.location.search + window.location.hash;
+      const newUrl = '/react-site/?redirect=' + encodeURIComponent(redirectPath);
+      window.location.replace(newUrl);
+    </script>
   </head>
   <body></body>
 </html>

@@ -124,6 +124,14 @@
   }
 }
 
+@media screen and (max-width: 760px) {
+  #footer .location-post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   #footer-container {
     max-width: 100%;

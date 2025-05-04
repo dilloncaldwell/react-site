@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Pagination from '../common/Pagination'; // Import Pagination component
 import Section from '../common/Section';
 import usePageTitle from '../hooks/usePageTitle';
 import Sidebar from '../sidebar/Sidebar';
@@ -7,8 +8,16 @@ import PageTitleBar from '../titlebar/PageTitleBar';
 import Button from '../ui/Button';
 import metadata from '/src/content/Blog/metadata.json'; // Import metadata
 
+const POSTS_PER_PAGE = 5;
+
 const Blog = () => {
   usePageTitle('Blog');
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const totalPages = Math.ceil(metadata.length / POSTS_PER_PAGE);
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const currentPosts = metadata.slice(startIndex, startIndex + POSTS_PER_PAGE);
+
   return (
     <>
       <PageTitleBar title="Blog" />
@@ -17,8 +26,8 @@ const Blog = () => {
           <Section.Cell span={16}>
             <div className="page-content">
               <div className="post-list">
-                {metadata.length > 0 ? (
-                  metadata.map((post) => (
+                {currentPosts.length > 0 ? (
+                  currentPosts.map((post) => (
                     <div className="post" key={post.slug}>
                       <h2>
                         <Link to={`/blog/${post.slug}`}>{post.title}</Link>
@@ -32,6 +41,7 @@ const Blog = () => {
                   <p>No blog posts available.</p>
                 )}
               </div>
+              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
             </div>
           </Section.Cell>
           <Section.Cell span={8} role="complementary">
